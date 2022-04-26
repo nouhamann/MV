@@ -1,0 +1,35 @@
+.grid{
+    border: 2px solid;
+    height: 480px;
+    width: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: rgb(3, 49, 234);
+}
+.grid div{
+    height: 80px;
+    width: 80px;
+    
+}
+
+.player-one{
+    background-color: red;
+    border-radius: 40px;
+}
+.player-two{
+    background-color: gold;
+    border-radius: 40px;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    
+
+}
+#btn{
+    /* text-align: center; */
+    display: block;
+    margin: auto;
+    font-size: 1em;
+}
