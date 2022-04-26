@@ -37,12 +37,12 @@ body{
     border-bottom: none;
 }
 .nought{
-    background-image: url(/MV/Noughts&Crosses/nought.jpeg);
+    background-image: url(/nought.jpeg);
     background-size: contain;
     
 }
 .cross{
-    background-image: url(/MV/Noughts&Crosses/cross.jpeg);
+    background-image: url(/cross.jpeg);
     background-size: contain;
     
 }
