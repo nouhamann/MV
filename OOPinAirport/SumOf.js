@@ -1,9 +1,21 @@
-function SumOf(num1,num2){
-    return num1 + num2
+class Maths{
+
+    SumOf(a,b){
+      
+        return a + b
+    }
+
+    Multiply(x,y){
+        return x * y
+    }
+
+    Division(x,y){
+        return x/y
+    }
 }
 
-console.log(SumOf(3,2))
-console.log(SumOf(6,9))
-console.log(SumOf(3,10))
-console.log(SumOf(7,2))
-console.log(SumOf(13.65,4.6))
+
+
+module.exports = Maths // exports class to different file
+
+//module.export = {SumOf,Multiply} exports muliple function

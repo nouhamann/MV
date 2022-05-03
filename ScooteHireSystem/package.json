@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "jest": "^28.0.3"
+  },
+  "name": "scootehiresystem",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:report": "jest --coverage=true"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
