@@ -38,8 +38,9 @@ test('check scooter charge function',()=>{
 
 test('check make payment function',()=>{
     const holly = new Customer('holly',21,300)
-    const scooter =new Scooter('london',32,100,false,true)
+    const scooter =new Scooter('london',32,100,false,false)
     holly.hire(scooter)
+    scooter.returns()
     holly.makePayment()
     expect(holly.bankBalance).toBe(296)
 })
@@ -63,6 +64,27 @@ test('checkBroken function',()=>{
     }
 })
 
-// test('hire function',()=>{
+test('hire function to check age',()=>{
+    const sam = new Customer('sam',13,3000)
+    const scooter= new Scooter('lool',32,100,false,false)
 
-// })
+    try{
+        sam.hire(scooter)
+    }
+    catch(error){
+        expect(error.toString()).toBe('Error: You must be 18 or above to rent scooter')
+    }
+
+
+})
+
+test('hire function to check charge',()=>{
+    const sam = new Customer('sam',30,3000)
+    const scooter= new Scooter('lool',32,90,false,false)
+    try{
+        sam.hire(scooter)
+    }
+    catch(error){
+        expect(error.toString()).toBe('Error: it must be fully charged')
+    }
+})

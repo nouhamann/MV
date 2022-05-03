@@ -72,7 +72,7 @@ class Scooter{
         this.range=range;
         this.charge=charge;
         this.broken=broken;
-        this.returnScooter=returnScooter
+        this.returnScooter=false
     
     }
     async charging() {
